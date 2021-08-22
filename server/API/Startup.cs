@@ -44,8 +44,8 @@ namespace API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
 
-            app.UseHttpsRedirection();
-
+//            app.UseHttpsRedirection();
+//commented out just temporarily to confirm azure build pipeline triggers new build when changes submitted
             app.UseRouting();
 
             app.UseAuthorization();
